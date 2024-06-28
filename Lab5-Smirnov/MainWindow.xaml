@@ -1,0 +1,26 @@
+﻿<Window x:Class="FuzzyNumberApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="FuzzyNumber Operations" Height="450" Width="525">
+    <Grid>
+        <StackPanel Margin="10">
+            <TextBlock Text="Enter values for FuzzyNumber A:" />
+            <TextBox x:Name="A_X" Margin="0,5" Text=""/>
+            <TextBox x:Name="A_E1" Margin="0,5" Text=""/>
+            <TextBox x:Name="A_E2" Margin="0,5" Text=""/>
+
+            <TextBlock Text="Enter values for FuzzyNumber B:" Margin="10,10,0,0"/>
+            <TextBox x:Name="B_X" Margin="0,5" Text=""/>
+            <TextBox x:Name="B_E1" Margin="0,5" Text=""/>
+            <TextBox x:Name="B_E2" Margin="0,5" Text=""/>
+
+            <Button Content="Add" Click="Add_Click" Margin="0,10"/>
+            <Button Content="Subtract" Click="Subtract_Click" Margin="0,5"/>
+            <Button Content="Multiply" Click="Multiply_Click" Margin="0,5"/>
+            <Button Content="Divide" Click="Divide_Click" Margin="0,5"/>
+            <Button Content="Inverse of A" Click="Inverse_Click" Margin="0,5"/>
+
+            <TextBlock x:Name="ResultText" Text="Result will appear here" Margin="10,10,0,0"/>
+        </StackPanel>
+    </Grid>
+</Window>
